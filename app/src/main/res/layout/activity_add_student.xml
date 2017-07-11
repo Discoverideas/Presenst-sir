@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackgroud">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:src="@drawable/rec10"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sadd_icon"
+        android:layout_marginTop="55dp"
+
+        android:id="@+id/ivsphoto"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etsname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn6color"
+        android:hint="Name"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/etsclass"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:layout_below="@+id/ivsphoto"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/etsclass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etsname"
+        android:layout_alignStart="@+id/etsname"
+        android:layout_below="@+id/etsname"
+        android:backgroundTint="@color/btn6color"
+        android:hint="Father's Name"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/etsphoneno"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etsfathername"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etsclass"
+        android:layout_alignStart="@+id/etsclass"
+        android:layout_below="@+id/etsclass"
+        android:backgroundTint="@color/btn6color"
+        android:hint="Class"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/etsphoneno"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etsphoneno"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etsfathername"
+        android:layout_alignStart="@+id/etsfathername"
+        android:layout_below="@+id/etsfathername"
+        android:backgroundTint="@color/btn6color"
+        android:hint="Phone No"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/etsaddress"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etsaddress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etsphoneno"
+        android:layout_alignStart="@+id/etsphoneno"
+        android:layout_below="@+id/etsphoneno"
+        android:backgroundTint="@color/btn6color"
+        android:hint="Address"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/etpickdate"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+
+
+
+    <EditText
+        android:id="@+id/etpickdate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etsaddress"
+        android:layout_alignStart="@+id/etsaddress"
+        android:layout_below="@+id/etsaddress"
+        android:backgroundTint="@color/btn6color"
+        android:hint="Joining Date"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/etfees"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etfees"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etpickdate"
+        android:layout_alignStart="@+id/etpickdate"
+        android:layout_below="@+id/etpickdate"
+        android:backgroundTint="@color/btn6color"
+        android:hint="Fees"
+        android:inputType="number"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/btAddStu"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+
+    <Button
+        android:id="@+id/btAddStu"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:background="@color/btn6color"
+        android:text="Add"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/etfees"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

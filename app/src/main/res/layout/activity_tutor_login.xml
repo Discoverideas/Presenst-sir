@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackgroud">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:src="@drawable/rec3"
+        android:id="@+id/imageView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tlogin_icon"
+        android:layout_marginTop="32dp"
+        android:id="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/btn3color"
+        android:hint="Email"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/etPassword"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etEmail"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignRight="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail"
+        android:layout_below="@+id/etEmail"
+        android:backgroundTint="@color/btn3color"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:nextFocusDown="@+id/btLogin"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The best way to manage your students"
+        android:textColor="@color/taglinecolor"
+        android:textSize="10dp"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp" />
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:background="@color/btn3color"
+        android:onClick="onClick"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Interactive way to manage students"
+        android:textColor="@color/taglinecolor"
+        android:textSize="15sp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackgroud">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:src="@drawable/rec5"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tsingup_icon"
+        android:layout_marginTop="52dp"
+
+        android:id="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/ettname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/btn4color"
+        android:hint="Name"
+        android:nextFocusDown="@+id/editText2"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/ettcname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ettname"
+        android:layout_alignStart="@+id/ettname"
+        android:layout_below="@+id/ettname"
+        android:backgroundTint="@color/btn4color"
+        android:hint="Coaching Name"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/ettemail"/>
+
+    <EditText
+        android:id="@+id/ettemail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ettcname"
+        android:layout_alignStart="@+id/ettcname"
+        android:layout_below="@+id/ettcname"
+        android:backgroundTint="@color/btn4color"
+        android:hint="Email"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/ettpassword"/>
+
+    <EditText
+        android:id="@+id/ettpassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ettemail"
+        android:layout_alignStart="@+id/ettemail"
+        android:layout_below="@+id/ettemail"
+        android:backgroundTint="@color/btn4color"
+        android:hint="Password"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/ettphone"/>
+
+    <EditText
+        android:id="@+id/ettphone"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ettpassword"
+        android:layout_alignStart="@+id/ettpassword"
+        android:layout_below="@+id/ettpassword"
+        android:backgroundTint="@color/btn4color"
+        android:hint="Phone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/bttRegister"/>
+    <EditText
+        android:id="@+id/ettaddress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ettphone"
+        android:layout_alignStart="@+id/ettphone"
+        android:layout_below="@+id/ettphone"
+        android:backgroundTint="@color/btn4color"
+        android:hint="Address"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/bttRegister"/>
+
+
+    <Button
+        android:id="@+id/bttRegister"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:background="@color/btn4color"
+        android:text="SignUp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/ettaddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+
+</RelativeLayout>
